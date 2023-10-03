@@ -1,0 +1,164 @@
+header {
+  background-color: #f1f1f1;
+  text-align: center;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  height: 60px;
+  /*
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;*/
+}
+.icon-chat-ai{
+  width: 15px; 
+  height: 15px;
+}
+.button-icon{
+  border-radius: 50px;
+  width:30px;
+  height: 30px;
+  display:flex; 
+  justify-content: center;
+  align-items:center;
+  z-index: 1;
+}
+
+.button-icon:hover{
+  background-color: rgb(235, 209, 202);
+}
+
+.button-icon:active{
+  background-color: rgb(201, 180, 173);
+}
+.chat-app-container{
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;  
+}
+
+.chat-app {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  /* Space for the input box */
+  box-sizing: border-box;
+  /* Include padding and border in the total height */
+  position: relative;
+  /* Add this line */
+  /*
+    position:absolute;
+    width:100%;
+    top:40px;
+    bottom:40px; 
+    overflow-y:auto;
+ */
+}
+
+header h1 {
+  color: #333;
+  font-size: 28px;
+}
+
+header p {
+  color: #666;
+  font-size: 18px;
+}
+
+
+.content {
+  flex: 1;
+  /* Allow content to fill the remaining space */
+  /*
+    background-color: #ccc;
+    padding-left: 0px;*/
+  overflow: auto;
+}
+
+.footer {
+  background-color: #999;
+  padding: 20px;
+}
+
+.user-Button-chatAI {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  /* Show pointer cursor on hover */
+
+}
+
+.user-Button-chatAI:hover {
+  background-color: #e8e8e8;
+}
+
+.user-Button-chatAI:active {
+  background-color: #d6d6d6;
+}
+
+.loader {
+  border: 5px solid #e9e9e9;
+  /* Light grey */
+  border-top: 5px solid #db8d34;
+  /* Blue */
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  animation: spin 4s linear infinite;
+}
+
+.logo-rotation{
+  animation: spin 3s linear infinite;
+}
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+
+
+.loading {
+  align-items: center;
+  display: flex;
+  justify-content: start;
+  height: 100%;
+  width: 100%;
+}
+
+.loading__dot {
+  animation: dot ease-in-out 1s infinite;
+  background-color: grey;
+  display: inline-block;
+  border-radius:5px;
+  height: 5px;
+  margin: 2px;
+  width: 5px;
+}
+
+.loading__dot:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+
+.loading__dot:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes dot {
+  0% { background-color: grey; transform: scale(1); }
+  50% { background-color: #ec7615; transform: scale(1.3); }
+  100% { background-color: grey ; transform: scale(1); }
+}

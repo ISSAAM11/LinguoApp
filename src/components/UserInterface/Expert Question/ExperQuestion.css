@@ -1,0 +1,75 @@
+
+
+.LikeMessage {
+  padding-top: 10px;
+}
+
+.message {
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 8px;
+  overflow-wrap: break-word;
+}
+
+
+
+.input-message-expert-positon {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 30px;
+  background-color: #f0f0f0;
+}
+
+.input-message-field-expert {
+  border: 0px;
+  background-color: transparent;
+}
+
+.input-message-field-expert:focus {
+  outline: none;
+  /* Remove the default focus outline */
+}
+
+
+
+.buttonchat {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  /* Maximum border radius, creating a circular element */
+  cursor: pointer;
+  /* Show pointer cursor on hover */
+}
+
+.buttonchat:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.buttonchat:active {
+  background-color: rgb(220, 220, 220);
+}
+
+.input-field-expert-page {
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: white;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 250px;
+  right: calc(( 100% - 250px ) * 0.3);
+  align-items: center;
+  height: 50px;
+  box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+

@@ -1,0 +1,27 @@
+.header-user-button{
+    border-radius: 10px;
+}
+.header-user-button:hover{
+    background-color: #e8e8e8;
+}
+.header-user-button:active{
+    background-color: #ddd;
+}
+
+.header-user-icon{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; 
+    border-radius: 50px;
+}
+.header-style{
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 100; /* Ensure the header stays above other content */
+}

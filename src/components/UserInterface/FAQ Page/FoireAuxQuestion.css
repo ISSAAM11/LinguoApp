@@ -1,0 +1,91 @@
+.Header-FAQ{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    background-image: url('../../../Images/Background/vecteezy_white-background-with-orange-geometric_11171105.jpg');
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+}
+
+.icon-grid-item{
+    padding:  10px 10px 10px 0px;
+    margin: 10px 20px 10px 10px;
+    border-right: 3px solid #f68442;
+}
+.grid-container { 
+    padding: 80px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 0.4fr); /* Three equal columns */
+    grid-template-rows: repeat(6, 140px); /* Two rows with fixed height */
+    gap: 90px; /* Gap between grid items */
+    justify-content: center; /* Horizontally center the grid */
+    align-items: center; /* Vertically center the grid */
+    height: 100vh; /* Make the grid take up the full viewport height */
+}
+  
+.grid-item {
+    height: 200px;
+    background-color: rgb(253, 253, 253);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgb(208, 208, 208);
+}
+
+.grid-item:hover{
+    background-color: rgb(247, 247, 247);
+}
+.grid-item:active{
+    background-color: rgb(242, 242, 242);
+}
+.element{
+    width: 50px;
+    padding: 50px;
+    height: 50px;
+    background-color: #bbec71;
+}
+
+
+
+.custom-hr {
+    border-color: #b8b8b8; /* Custom color */
+    width: 100px;    
+    align-self: center;
+}
+
+.gridContainer{
+    justify-content: center; /* Horizontally center the grid */
+    align-items: center; /* Vertically center the grid */
+    width: 100vh;
+    height: 100vh;
+}
+
+.title-element{
+    font-size: 20px;
+    font-weight: 650;
+    max-height: 60px;
+    overflow: hidden;
+
+
+}
+
+.constent-element{
+    padding-right: 30px;
+    max-height: 58px;
+    font-size: 13px;
+    overflow: hidden;
+    color:#757575
+}
+
+
+@media (max-width: 1050px) {
+    .grid-container { 
+        padding: 80px 0px;
+        display: grid;
+        grid-template-columns: repeat(1, 0.4fr); /* Three equal columns */
+        grid-template-rows: repeat(12, 140px); /* Two rows with fixed height */
+        gap: 90px; /* Gap between grid items */
+        justify-content: center; /* Horizontally center the grid */
+        align-items: center; /* Vertically center the grid */
+        height: 100vh; /* Make the grid take up the full viewport height */
+    }
+}

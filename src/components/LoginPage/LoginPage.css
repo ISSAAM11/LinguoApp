@@ -1,0 +1,104 @@
+/* Reset some default styles */
+body, h1, h2, p, form {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Basic styling for the whole app */
+  .LoginPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+.LogoLingue{
+    padding-left: 80px;
+    height: 60px;
+}
+  /* Header styles */
+.LoginHeader {
+    justify-content: space-between;
+    display :flex; 
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:100%;
+}
+  
+  /* Footer styles */
+.footerLogin {
+    width:100%;
+    background-color: #3a3a3a;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+  }
+  
+.errorLogin{
+  color: rgb(17, 17, 17);
+  font-size: 12px;
+  align-self: center;
+  padding-top: 8px;
+}
+  
+  /* Login container styles */
+  .login-container {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 1.5rem;
+    width: 350px;
+    background-color: #fafafa;
+    align-content:center
+  }
+  
+  /* Login form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  input {
+    width: 100%;
+    align-self: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .login-background{
+    background-image: url('../../Images/Background/Background3.jpg');
+    background-size: cover;
+  }
+  button {
+    background-color: #e15634;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+
+.passwordForgot{
+    align-self: end;
+    margin-bottom:10px;
+    margin-Top:10px;
+    color:#e15634;
+}

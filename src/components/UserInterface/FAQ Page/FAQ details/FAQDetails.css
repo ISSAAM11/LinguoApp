@@ -1,0 +1,49 @@
+.HeaderDetails{
+    background-image: url('../../../../Images/Background/vecteezy_white-and-orange-modern-background_11171103.jpg');
+    padding: 30px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+
+}
+
+.grid-container2 { 
+    padding-left: 50px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 0.7fr); /* Three equal columns */
+    grid-template-rows: repeat(6, 210px); /* Two rows with fixed height */
+    gap: 20px; /* Gap between grid items */
+    align-items: center; /* Vertically center the grid */
+    height: 100vh; /* Make the grid take up the full viewport height */
+    width: 100%;
+}
+ 
+.imageUser{
+    height: 40px;
+    padding-right:15px;
+}
+.image-user-details-page{
+    border-radius: 50px;
+    height: 40px;
+    margin-right:15px;
+}
+.grid-item {
+    padding:15px;
+    height: 200px;
+    border-color: rgb(225, 225, 225);
+    border-radius: 5px;
+}
+
+.name{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.titleComment{
+    font-weight: 700;
+}
+
+.constent-element-details{
+    height: 50px;
+    overflow: hidden;
+}

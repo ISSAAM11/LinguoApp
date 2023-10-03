@@ -1,0 +1,57 @@
+.SideBarlement{
+    display: "flex";
+    align-items: "center";
+    margin-bottom: "25px";
+    color: 'black';
+    display: 'inline-block';
+}
+
+.sidebar {
+    max-width: 250px;
+    background-color: #fafafa;
+    color: black;
+    padding: 10px;
+    transition: width 0.5s; /* Add a smooth transition effect for resizing */
+}
+ 
+@media (max-width: 700px) {
+    .sidebar {
+        width: 60px; /* Hide the sidebar by default on small screens */
+    }
+    .text-item {
+        display: none; /* Hide menu items when the sidebar is collapsed */
+    }
+
+}
+
+
+.menu-item {
+    cursor: pointer;
+    padding:  10px 10px 10px 10px;
+    margin-bottom: 15px;
+    color: black;
+    display: inline-block; 
+    width: 100%; 
+    border-radius: 10px;
+}
+
+.menu-item:hover{
+    background-color: #eee;
+}
+
+.menu-item:active{
+    background-color: #e4e4e4;
+}
+.selected-menu-item{
+    background-color: #eee;
+}
+
+.Logo-linguo-application{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-item-selected{
+    color: #e15634;
+    font-weight:"600";
+}
